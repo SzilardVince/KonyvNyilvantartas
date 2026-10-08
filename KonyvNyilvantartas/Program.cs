@@ -6,11 +6,11 @@ for (int i = 0; i < 3; i++)
 {
     konyv gza = new konyv();
     Console.WriteLine($"{i+1}. könyv adatai:");
-    Console.Write($"\nCím: ");
+    Console.Write($"\tCím: ");
     gza.Cim = Console.ReadLine();
-    Console.Write($"\nSzerző: ");
+    Console.Write($"\tSzerző: ");
     gza.Szerzo = Console.ReadLine();
-    Console.Write($"\nOldalszám: ");
+    Console.Write($"\tOldalszám: ");
     gza.Oldalszam = int.Parse(Console.ReadLine());
     Console.WriteLine();
     konyvetlen.Add(gza);
@@ -20,7 +20,7 @@ Console.WriteLine("Rögzített könyvek listája:");
 int r = 0;
 for (int i = 0; i < 3; i++)
 {
-    Console.WriteLine($"\n- {konyvetlen[i].Cim} ({konyvetlen[i].Szerzo}) - {konyvetlen[i].Oldalszam} oldal");
+    Console.WriteLine($"\t- {konyvetlen[i].Cim} ({konyvetlen[i].Szerzo}) - {konyvetlen[i].Oldalszam} oldal");
     r += konyvetlen[i].Oldalszam;
 }
 Console.WriteLine();
