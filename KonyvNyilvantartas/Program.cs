@@ -16,3 +16,12 @@ for (int i = 0; i < 3; i++)
     konyvetlen.Add(gza);
 
 }
+Console.WriteLine("Rögzített könyvek listája:");
+int r = 0;
+for (int i = 0; i < 3; i++)
+{
+    Console.WriteLine($"\n- {konyvetlen[i].Cim} ({konyvetlen[i].Szerzo}) - {konyvetlen[i].Oldalszam} oldal");
+    r += konyvetlen[i].Oldalszam;
+}
+Console.WriteLine();
+Console.WriteLine($"Összesen elolvasandó: {r} oldal");
