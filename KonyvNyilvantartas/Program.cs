@@ -24,4 +24,4 @@ for (int i = 0; i < 3; i++)
     r += konyvetlen[i].Oldalszam;
 }
 Console.WriteLine();
-Console.WriteLine($"Összesen elolvasandó: {r} oldal");
+Console.WriteLine($"Összesen elolvasandó: {r} oldal"); 
